@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+	<route url="/all" module="Todo" action="all"/>
+	<route url="/add-todo" module="Todo" action="addTodo" />
+	<route url="/add-category" module="Todo" action="addCategory" />
+	<route url="/delete-category/([0-9]+)" module="Todo" action="deleteCategory" vars="id" />
+	<route url="/delete-todo/([0-9]+)" module="Todo" action="deleteTodo" vars="id" />
+	<route url="/change-todo-date" module="Todo" action="changeTodoDate" />
+	<route url="/done-todo/([0-9]+)" module="Todo" action="doneTodo" vars="id" />
+</routes>
